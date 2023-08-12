@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    
+    <link rel="stylesheet" href="detail.css">
+    <script src="https://kit.fontawesome.com/bef43d9606.js" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: #04386F;">
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        
+
+            <h1 class="phone-label" style="color: #ff6e01;">Payment details.</h1>
+            <form>
+            
+                <label for="creditCard">Credit Card Number:</label>
+                <input type="text" id="creditCard" required><br>
+        
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" required><br>
+        
+                <label for="cvv">CVC/CVV:</label>
+                <input type="text" id="cvv" required><br>
+        
+                <label for="nameOnCard">Name on Card:</label>
+                <input type="text" id="nameOnCard" required><br>
+                <button style="font-size: 15px;" type="submit" onclick="displayLocalStorageValues()">Submit</button>
+
+            </form>
+        
+            
+                
+            <a href="confirmation.html" class="circle-button">
+                <span class="arrow-1"></span>
+            </a>
+    </div>
+
+    <nav>
+        <ul>
+            <a href="Adults.html"><li><i class="fas fa-user-alt"></i> Adult</li></a>
+            <a href="Children.html"><li><i class="fa-solid fa-child"></i>Children</li></a>
+            <a href="infant.html"><li><i class="fa-solid fa-baby-carriage"></i>Infant</li></a>
+            <a href="proceed.html"><li><i class="fa-solid fa-cart-shopping"></i>Proceed</li></a>
+        </ul>
+    </nav>
+    <script src="detail.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

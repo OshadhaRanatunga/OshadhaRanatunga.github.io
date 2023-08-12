@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+  --main: #ff6e01;
+  --bg: #f1e1d2;
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main);
+  border-radius: 5rem;
+}
+
+section{
+  padding: 8rem 7%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--main);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+}
+
+.btn{
+  font-size: 1.7rem;
+  display: inline-block;
+  background: var(--main);
+  color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #ff9748;
+  z-index: -1;
+  transition: .3s linear;
+  left: 0;
+}
+
+.btn:hover::before{
+  width: 100%;
+}
+
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+div {
+  margin: 0.4rem 0;
+}
+
+
+.register{
+    
+    background-size: cover;
+    text-align: center;
+  }
+  
+  
+/*apply css properties to body tag*/
+
+
+
+/*apply css properties to container class*/
+
+.container {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	text-align: center;
+}
+
+/*apply css properties to button tag*/
+
+button {
+	width: 60px;
+	height: 40px;
+	font-size: 30px;
+	background-color: var(--main);
+	color: honeydew;
+}
+
+/*apply hover effect to button tag*/
+
+button:hover {
+	background-color: white;
+	color: grey;
+}
+
+/*apply css properties to h2 tag*/
+
+h2 {
+	color: honeydew;
+	margin: 0 50px;
+	font-size: 45px;
+}
+
+/*apply css properties to h1 tag*/
+
+span{
+  font-size: 26px;
+  margin: 0 50px;
+  color: honeydew;
+}
+
+.tkt{
+  margin-top: 150px;
+}
+
+.naps{
+  margin-top: 50px;
+}

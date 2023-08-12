@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>  
+
+
+  
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John ">
+              <label for="email"> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"> Address</label>
+              <input type="text" id="adr" name="address" placeholder="13/2 kawdanawa rd /Dehiwala">
+              <label for="city"> City</label>
+              <input type="text" id="city" name="city" placeholder="Colombo">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="CMB">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2028">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+  
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart
+          <span class="price" style="color:black">
+            <i class="fa fa-shopping-cart"></i>
+            <b>4</b>
+          </span>
+        </h4>
+        <p><a href="#">Product 1</a> <span class="price">Rs 550</span></p>
+        <p><a href="#">Product 2</a> <span class="price">Rs 550</span></p>
+        <p><a href="#">Product 3</a> <span class="price">Rs 550</span></p>
+        <p><a href="#">Product 4</a> <span class="price">Rs 550</span></p>
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>Rs 2200</b></span></p>
+      </div>
+    </div>
+  </div>
+
+   <!-- footer -->
+
+  <!-- footer -->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3><i class="fas fa-paw"></i> zoo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="links"><i class="fas fa-clock"></i>monday - friday</p>
+            <p class="days">7:00AM - 11:00PM</p>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"> +94777888990</a>
+            
+            <a href="#" class="links"> info@turtlesl.com</a>
+            <a href="#" class="links"> Hikkaduwa, Sri Lanka</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="main.html" class="links"> home</a>
+            <a href="hikkaduwa.html" class="links"> Hikkaduwa</a>
+            <a href="animals.html" class="links"> Turtle Types</a>
+            <a href="threats.html" class="links"> Threats</a>
+            <a href="hatcheries.html" class="links"> Turtle hatcheries</a>
+            <a href="shop.html" class="links"> Shop & Donate</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <a href="#" class="btn">subscribe</a>
+            
+        </div>
+
+    </div>
+
+    
+
+</section>
+
+  
+
+</section>
+</body>
+</html>

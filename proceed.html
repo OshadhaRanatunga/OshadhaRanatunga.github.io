@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bef43d9606.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #04386F;">
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-   times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <section class="register" id="register">
+
+            <h1 class="heading">Proceed with booking dates and time slots.</h1>
+            <div class="head">
+                <h1>Select a date</h1>
+            </div>
+            <div class="dateselector">
+                <input type="date" id="datepicker">
+                <button class="button1" onclick="saveDate()">Save Date</button>
+            </div>
+            <button class="button1" onclick="viewTotal()">View Total</button>
+            
+
+            <!--time selecting-->
+            <h1 class="header">Select a Time Range for your visit</h1>
+            <form>
+              <label for="startTime">Start Time:</label>
+              <select id="startTime" onchange="updateEndTime()">
+                <!-- Generate options for times from 7 am to 5 pm (on the hour) -->
+                <!-- The value is the number of hours since midnight (0 for 12:00 am, 1 for 1:00 am, and so on) -->
+                <!-- Only allow times from 7 am to 5 pm (values 7 to 17) -->
+                <option value="7">7:00 am</option>
+                <option value="8">8:00 am</option>
+                <option value="9">9:00 am</option>
+                <option value="10">10:00 am</option>
+                <option value="11">11:00 am</option>
+                <option value="12">12:00 pm</option>
+                <option value="13">1:00 pm</option>
+                <option value="14">2:00 pm</option>
+                <option value="15">3:00 pm</option>
+                <option value="16">4:00 pm</option>
+                <option value="17">5:00 pm</option>
+              </select>
+          
+              <label for="endTime">End Time:</label>
+              <select id="endTime">
+                <!-- The options will be dynamically populated based on the selected start time -->
+              </select>
+            </form>
+            
+            <div class="amount">
+                <p class="cost">Total Cost: <span id="totalCost">0</span> USD</p>
+                <button class="buttoncost" type="button" onclick="calculateTotal()">Calculate Total Cost</button>
+            </div>
+            <div class="Summary"></div>
+            <h1>Summary</h1>
+            <form>
+              <!-- ... Other form elements as before ... -->
+            </form>
+        
+            
+            <table id="ticketsTable">
+              <tr>
+                <th>Ticket Type</th>
+                <th>Ticket Count</th>
+              </tr>
+            </table>
+        
+            <h2>Total Cost: <span id="totalCost">0</span></h2>
+
+            <a href="details.html" class="circle-button">
+                <span class="arrow"></span>
+            </a>
+        </section>
+    </div>
+
+    <nav>
+        <ul>
+            <a href="Adults.html"><li><i class="fas fa-user-alt"></i> Adult</li></a>
+            <a href="Children.html"><li><i class="fa-solid fa-child"></i>Children</li></a>
+            <a href="infant.html"><li><i class="fa-solid fa-baby-carriage"></i>Infant</li></a>
+            <a href="proceed.html"><li><i class="fa-solid fa-cart-shopping"></i>Proceed</li></a>
+        </ul>
+    </nav>
+    <script src="tktcount.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
